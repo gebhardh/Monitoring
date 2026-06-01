@@ -5,43 +5,26 @@
 
 ## Inhaltsverzeichnis
 
-1. [PKV und Krankenversicherung](#1-pkv-und-krankenversicherung)
-2. [Cisco Nexus – Metriken und Monitoring](#2-cisco-nexus--metriken-und-monitoring)
-3. [Telegraf mit gRPC/gNMI](#3-telegraf-mit-grpcgnmi)
-4. [Cisco ACI – Metriken, Produkte und Latenzmessung](#4-cisco-aci--metriken-produkte-und-latenzmessung)
-5. [Discard-Rate vs. Drop-Rate](#5-discard-rate-vs-drop-rate)
-6. [Was ist eine Line-Card?](#6-was-ist-eine-line-card)
-7. [AWS und STACKIT – Netzwerktopologie-Daten](#7-aws-und-stackit--netzwerktopologie-daten)
-8. [ZTNA – Metriken und Logs](#8-ztna--metriken-und-logs)
-9. [Cisco SNA – Monitoring und Datenspeicherung](#9-cisco-sna--monitoring-und-datenspeicherung)
-10. [Cisco SNA – Skalierung für 400.000 IPs](#10-cisco-sna--skalierung-für-400000-ips)
-11. [Alternativen zu Cisco SNA](#11-alternativen-zu-cisco-sna)
-12. [Latenzmessung in komplexen Netzwerken](#12-latenzmessung-in-komplexen-netzwerken)
-13. [NetFlow auf Linux mit Telegraf](#13-netflow-auf-linux-mit-telegraf)
-14. [NetFlow-Dashboards in Grafana/Prometheus](#14-netflow-dashboards-in-grafanprometheus)
-15. [Telegraf-Metriken an Splunk senden](#15-telegraf-metriken-an-splunk-senden)
-16. [Qbilon – Produktmerkmale und CSDM-Vergleich](#16-qbilon--produktmerkmale-und-csdm-vergleich)
-17. [NNMi – Datenerfassung und ServiceNow CSDM](#17-nnmi--datenerfassung-und-servicenow-csdm)
-18. [Schulpflicht in Deutschland (Exkurs)](#18-schulpflicht-in-deutschland-exkurs)
+1. [Cisco Nexus – Metriken und Monitoring](#1-cisco-nexus--metriken-und-monitoring)
+2. [Telegraf mit gRPC/gNMI](#2-telegraf-mit-grpcgnmi)
+3. [Cisco ACI – Metriken, Produkte und Latenzmessung](#3-cisco-aci--metriken-produkte-und-latenzmessung)
+4. [Discard-Rate vs. Drop-Rate](#4-discard-rate-vs-drop-rate)
+5. [Was ist eine Line-Card?](#5-was-ist-eine-line-card)
+6. [AWS und STACKIT – Netzwerktopologie-Daten](#6-aws-und-stackit--netzwerktopologie-daten)
+7. [ZTNA – Metriken und Logs](#7-ztna--metriken-und-logs)
+8. [Cisco SNA – Monitoring und Datenspeicherung](#8-cisco-sna--monitoring-und-datenspeicherung)
+9. [Cisco SNA – Skalierung für 400.000 IPs](#9-cisco-sna--skalierung-für-400000-ips)
+10. [Alternativen zu Cisco SNA](#10-alternativen-zu-cisco-sna)
+11. [Latenzmessung in komplexen Netzwerken](#11-latenzmessung-in-komplexen-netzwerken)
+12. [NetFlow auf Linux mit Telegraf](#12-netflow-auf-linux-mit-telegraf)
+13. [NetFlow-Dashboards in Grafana/Prometheus](#13-netflow-dashboards-in-grafanaprometheus)
+14. [Telegraf-Metriken an Splunk senden](#14-telegraf-metriken-an-splunk-senden)
+15. [Qbilon – Produktmerkmale und CSDM-Vergleich](#15-qbilon--produktmerkmale-und-csdm-vergleich)
+16. [NNMi – Datenerfassung und ServiceNow CSDM](#16-nnmi--datenerfassung-und-servicenow-csdm)
 
 ---
 
-## 1. PKV und Krankenversicherung
-
-### Internationale Privatversicherung
-Günstige internationale Krankenversicherungen (für Expats/Nomaden):
-SafetyWing, Cigna Global, APRIL International, Allianz Care, Across Global Cover.
-Einsparungen durch Zonenmodell (USA ausschließen), höheren Selbstbehalt und modularen Aufbau.
-
-### PKV mit 62 Jahren als Angestellter
-- PKV-Wechsel mit 62 Jahren nicht empfohlen: hohe Beiträge, keine Rückkehr zur GKV möglich
-- Als freiwillig GKV-Versicherter: Prüfen ob KVdR-Voraussetzungen (9/10-Regelung) beim Renteneintritt erfüllt werden
-- **KVdR-Beiträge 2026:** ca. 8,75 % der Bruttorente (KV-Eigenanteil) + 3,6–4,2 % Pflegeversicherung
-- **9/10-Regelung:** 90 % der zweiten Hälfte des Berufslebens in der GKV versichert; Erziehungszeiten (3 Jahre/Kind) werden angerechnet
-
----
-
-## 2. Cisco Nexus – Metriken und Monitoring
+## 1. Cisco Nexus – Metriken und Monitoring
 
 ### 20 wichtigste Metriken
 
@@ -79,7 +62,7 @@ Einsparungen durch Zonenmodell (USA ausschließen), höheren Selbstbehalt und mo
 
 ---
 
-## 3. Telegraf mit gRPC/gNMI
+## 2. Telegraf mit gRPC/gNMI
 
 Telegraf unterstützt gRPC mit zwei Plugins:
 
@@ -101,7 +84,7 @@ Telegraf unterstützt gRPC mit zwei Plugins:
 
 ---
 
-## 4. Cisco ACI – Metriken, Produkte und Latenzmessung
+## 3. Cisco ACI – Metriken, Produkte und Latenzmessung
 
 ### 20 wichtigste ACI-Metriken (Spine & Leaf, ~5.000 Ports)
 
@@ -147,7 +130,7 @@ Primärer Abrufweg: **APIC REST API**
 
 ---
 
-## 5. Discard-Rate vs. Drop-Rate
+## 4. Discard-Rate vs. Drop-Rate
 
 | Kriterium | Discard | Drop |
 |---|---|---|
@@ -171,7 +154,7 @@ Primärer Abrufweg: **APIC REST API**
 
 ---
 
-## 6. Was ist eine Line-Card?
+## 5. Was ist eine Line-Card?
 
 Eine Line-Card ist eine steckbare Erweiterungsplatine in modularen Chassis-Switches.
 Sie enthält physische Interfaces, NPU (ASIC für Forwarding), Puffer-Speicher und
@@ -187,7 +170,7 @@ das Fabric-Interface zur Backplane.
 
 ---
 
-## 7. AWS und STACKIT – Netzwerktopologie-Daten
+## 6. AWS und STACKIT – Netzwerktopologie-Daten
 
 ### AWS
 
@@ -219,7 +202,7 @@ das Fabric-Interface zur Backplane.
 
 ---
 
-## 8. ZTNA – Metriken und Logs
+## 7. ZTNA – Metriken und Logs
 
 ZTNA-Architektur erzeugt Metriken und Logs aus 5 Ebenen:
 
@@ -260,7 +243,7 @@ ZTNA-Architektur erzeugt Metriken und Logs aus 5 Ebenen:
 
 ---
 
-## 9. Cisco SNA – Monitoring und Datenspeicherung
+## 8. Cisco SNA – Monitoring und Datenspeicherung
 
 ### Monitoring-Aspekte
 
@@ -285,7 +268,7 @@ ZTNA-Architektur erzeugt Metriken und Logs aus 5 Ebenen:
 
 ---
 
-## 10. Cisco SNA – Skalierung für 400.000 IPs
+## 9. Cisco SNA – Skalierung für 400.000 IPs
 
 ### Empfohlene Architektur
 
@@ -304,7 +287,7 @@ ZTNA-Architektur erzeugt Metriken und Logs aus 5 Ebenen:
 
 ---
 
-## 11. Alternativen zu Cisco SNA
+## 10. Alternativen zu Cisco SNA
 
 ### Kommerzielle NDR-Lösungen
 
@@ -340,7 +323,7 @@ ZTNA-Architektur erzeugt Metriken und Logs aus 5 Ebenen:
 
 ---
 
-## 12. Latenzmessung in komplexen Netzwerken
+## 11. Latenzmessung in komplexen Netzwerken
 
 ### Methoden im Überblick
 
@@ -377,7 +360,7 @@ ZTNA-Architektur erzeugt Metriken und Logs aus 5 Ebenen:
 
 ---
 
-## 13. NetFlow auf Linux mit Telegraf
+## 12. NetFlow auf Linux mit Telegraf
 
 ### Eigenen Traffic als NetFlow exportieren
 
@@ -407,7 +390,7 @@ fprobe -i eth0 -f ip 127.0.0.1:2055
 
 ---
 
-## 14. NetFlow-Dashboards in Grafana/Prometheus
+## 13. NetFlow-Dashboards in Grafana/Prometheus
 
 - **Prometheus** ist für NetFlow-Daten nur eingeschränkt geeignet (Cardinality-Problem durch viele Tags)
 - **InfluxDB** ist das empfohlene Backend für NetFlow-Visualisierung
@@ -416,7 +399,7 @@ fprobe -i eth0 -f ip 127.0.0.1:2055
 
 ---
 
-## 15. Telegraf-Metriken an Splunk senden
+## 14. Telegraf-Metriken an Splunk senden
 
 ### Drei Integrationswege
 
@@ -447,7 +430,7 @@ fprobe -i eth0 -f ip 127.0.0.1:2055
 
 ---
 
-## 16. Qbilon – Produktmerkmale und CSDM-Vergleich
+## 15. Qbilon – Produktmerkmale und CSDM-Vergleich
 
 ### Überblick
 - Gegründet 2019 in Augsburg, 2023 von Paessler AG übernommen
@@ -478,7 +461,7 @@ Qbilon ist **kein Konkurrent zur CSDM – sondern ihr Zulieferer:**
 
 ---
 
-## 17. NNMi – Datenerfassung und ServiceNow CSDM
+## 16. NNMi – Datenerfassung und ServiceNow CSDM
 
 ### Datenerfassung aus verschiedenen Quellen
 
@@ -515,33 +498,6 @@ Qbilon ist **kein Konkurrent zur CSDM – sondern ihr Zulieferer:**
 
 ---
 
-## 18. Schulpflicht in Deutschland (Exkurs)
-
-### Historische Meilensteine (150 Jahre)
-
-| Jahr | Ereignis |
-|---|---|
-| 1871 | Schulpolitik bleibt Ländersache nach Reichsgründung |
-| 1919 | Weimarer Verfassung – erstmals echte Schulpflicht (Art. 145) |
-| 1920 | Reichsgrundschulgesetz – verpflichtende vierjährige Grundschule |
-| 1933 | NS-Gleichschaltung, Rassenkunde als Schulfach |
-| 1936 | Hitlerjugend-Pflicht neben Schulpflicht |
-| 1938 | **Reichsschulpflichtgesetz** – Schulbesuchspflicht (ersetzt Unterrichtspflicht), Heimunterricht verboten |
-| 1945 | Restauration des dreigliedrigen Systems in der BRD |
-| 1949 | Bildungsföderalismus im GG (Art. 7); DDR: einheitliche Oberschule |
-| 1964 | „Die deutsche Bildungskatastrophe" (Picht) – Gesamtschul-Debatte |
-| 2001 | PISA-Schock – Bildungsreformen in allen Ländern |
-| 2009 | UN-Behindertenrechtskonvention → Inklusionspflicht |
-| 2019 | Digitalpakt Schule (5 Mrd. €) |
-| 2021 | Rechtsanspruch auf Ganztagsbetreuung (ab 2026 schrittweise) |
-
-### Heimunterricht
-Das Verbot des Heimunterrichts wurde **1938** durch das NS-Regime eingeführt – nicht vorher.
-Zuvor war Heimunterricht in Preußen und der Weimarer Republik ausdrücklich erlaubt (Paulskirchenverfassung 1849: „Der häusliche Unterricht unterliegt keiner Beschränkung").
-Deutschland ist heute international ein Sonderfall: Fast alle europäischen Nachbarländer erlauben Heimunterricht.
-
----
-
 ## Erstellte Dateien (Übersicht)
 
 | Datei | Inhalt |
@@ -551,7 +507,7 @@ Deutschland ist heute international ein Sonderfall: Fast alle europäischen Nach
 | `cisco_aci_produkte_uebersicht.md` | Cisco ACI Produktökosystem |
 | `cisco_aci_latenzmessung_einzelverbindungen.md` | Latenzmessung in ACI |
 | `drop_rate_vs_discard_rate.md` | Unterschied Drop vs. Discard |
-| `monitoring_netzwerk_gesamtdokument.md` | Monitoring-Gesamtdokument (Kapitel 2–7) |
+| `monitoring_netzwerk_gesamtdokument.md` | Monitoring-Gesamtdokument |
 | `ztna_metriken_und_logs.md` | ZTNA-Metriken und Logs |
 | `cisco_sna_monitoring_und_datenspeicherung.md` | Cisco SNA Monitoring + Speicherung |
 | `cisco_sna_skalierung_400k_ips.md` | SNA-Skalierung für 400.000 IPs |
@@ -559,9 +515,6 @@ Deutschland ist heute international ein Sonderfall: Fast alle europäischen Nach
 | `latenzmessung_uebergaenge_komplexe_netzwerke.md` | Latenzmessung Hop-by-Hop |
 | `telegraf_metriken_nach_splunk.md` | Telegraf → Splunk HEC |
 | `qbilon_produktmerkmale.md` | Qbilon + CSDM-Vergleich |
-| `schulpflicht_deutschland_150jahre.md` | Schulpflicht-Geschichte |
-| `schulpflicht_1933_1945.md` | Schulpolitik NS-Zeit |
-| `schulpflicht_gesetzestexte_weimarer_republik.md` | Weimarer Gesetzestexte |
 
 ---
 
